@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.View.PgEditor"
+             Title="病歷號碼">
+    <StackLayout VerticalOptions="FillAndExpand">
+    <StackLayout VerticalOptions="FillAndExpand">
+
+        <Label 
+            Text="病歷號碼"
+             FontSize="30"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Start" />
+        <Entry x:Name="txtFidEntry"
+               HorizontalOptions="FillAndExpand"
+               FontSize="30"></Entry>
+
+
+
+
+        <Label 
+            Text="名子"
+             FontSize="30"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Start" />
+        <Entry x:Name="txtNameEntry"
+               HorizontalOptions="FillAndExpand"
+               FontSize="30"></Entry>
+        <Label 
+            Text="電話"
+             FontSize="30"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Start" />
+        <Entry x:Name="txtPhoneEntry"
+               HorizontalOptions="FillAndExpand"
+               FontSize="30"></Entry>
+        <Label 
+            Text="電子郵件"
+             FontSize="30"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Start" />
+        <Entry x:Name="txtEmailEntry"
+               HorizontalOptions="FillAndExpand"
+               FontSize="30"></Entry>
+        <Label 
+            Text="地址"
+            FontSize="30"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Start" />
+        <Entry x:Name="txtAddressEntry"
+               HorizontalOptions="FillAndExpand"
+               FontSize="30"></Entry>
+        </StackLayout>
+        <StackLayout   Orientation="Horizontal">
+
+            <Button x:Name="first"
+                Clicked="first_Clicked" 
+                BackgroundColor="Red"
+                HorizontalOptions="FillAndExpand"
+                ImageSource="first"/>
+            <Button x:Name="nextt"
+                Clicked="next_Clicked"
+                BackgroundColor="Red"
+                 HorizontalOptions="FillAndExpand"
+                ImageSource="nextt"/>
+            <Button x:Name="backk"
+                 BackgroundColor="Red"
+                Clicked="back_Clicked"
+                  HorizontalOptions="FillAndExpand"
+                ImageSource="backk"/>
+            <Button x:Name="last"
+                 BackgroundColor="Red"
+                 Clicked="last_Clicked"
+                 HorizontalOptions="FillAndExpand"
+                 ImageSource="last"/>
+            <Button x:Name="List"
+                 BackgroundColor="Red"
+                 Clicked="btnList_Clicked"
+                 HorizontalOptions="FillAndExpand"
+                 ImageSource="list"/>
+            <Button x:Name="selectword"
+                 BackgroundColor="Red"
+                 Clicked="Select_Clicked"
+                 HorizontalOptions="FillAndExpand"
+                 ImageSource="select"/>
+            
+
+
+
+
+
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

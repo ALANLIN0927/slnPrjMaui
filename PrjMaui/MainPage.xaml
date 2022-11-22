@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.MainPage">
+     
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                    >
+            <Label
+             x:Name="labFirst"
+            Text="紅"
+             VerticalTextAlignment="Center"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="Red"
+            HorizontalTextAlignment="Center"
+            FontSize="40"
+            Padding="10"
+            Margin="10"    />
+            
+            <Label
+             x:Name="labtwo"
+            Text="藍"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="Blue"
+            HorizontalTextAlignment="Center"
+            FontSize="40"
+            Padding="10"
+            Margin="10" />
+            <Label
+             x:Name="labthree"
+            Text="黃"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="Yellow"
+            HorizontalTextAlignment="Center"
+            FontSize="40"/>
+            <Label
+             x:Name="labfour"
+            Text="綠"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="DarkGreen"
+            HorizontalTextAlignment="Center"
+            FontSize="40"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical"
+            VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand">
+            
+        <Label
+                Text="第一行"
+               HorizontalTextAlignment="Start"
+             FontSize="40"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            
+                />
+        <Label
+                Text="第二行"
+             HorizontalTextAlignment="Start"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand"
+             FontSize="40"
+                />
+        <Label
+                Text="第三行"
+             HorizontalTextAlignment="Start"
+              VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+             FontSize="40"
+                />
+        <Label
+                Text="第四行"
+             HorizontalTextAlignment="Start"
+              VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+             FontSize="40"
+                />
+
+
+        </StackLayout>
+
+    </StackLayout>
+    <!--<StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical"
+              VerticalOptions="FillAndExpand">
+         
+        <Label
+             
+            Text="A"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="DarkGreen"
+            HorizontalTextAlignment="Center"
+            FontSize="35"/>
+        <Label
+            Text="B"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            BackgroundColor="Blue"
+            HorizontalTextAlignment="Start"
+            FontSize="35"/>
+        <Label
+            Text="B"
+            HorizontalOptions="Start"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="Red"
+            HorizontalTextAlignment="End"
+            FontSize="35"/>
+        </StackLayout>
+        <Image
+        Source="ee"
+        ></Image>
+        <Label
+            Text="B"
+            HorizontalOptions="End"
+            BackgroundColor="Yellow"
+            
+            FontSize="35"/>
+        <Label
+            Text="B"
+            HorizontalOptions="End"
+            BackgroundColor="Yellow"
+            
+            FontSize="35"/>
+        <Label
+            Text="B"
+            HorizontalOptions="End"
+            BackgroundColor="Yellow"
+            
+            FontSize="35"/>
+        <Button Text="你好" />
+        <TableView>
+            <TableRoot>
+                <TableSection></TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>-->
+    
+    <!--<ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="10"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            <Label
+                FontSize="35"
+                Text="Hello"></Label>
+
+        </VerticalStackLayout>
+    </ScrollView>-->
+
+</ContentPage>

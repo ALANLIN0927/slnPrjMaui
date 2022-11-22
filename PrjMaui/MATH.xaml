@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.MATH"
+             Title="MATH">
+    <StackLayout VerticalOptions="Start">
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+
+            <Entry x:Name="txtXEntry"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="30"></Entry>
+            <Label Text="X2+"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="30"></Label>
+            <Entry x:Name="txtYEntry"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="30"></Entry>
+            <Label Text="X+"
+                   HorizontalOptions="FillAndExpand"
+                    FontSize="30"></Label>
+            <Entry x:Name="txtZEntry"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="30"></Entry>
+            <Label Text="=0"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="30"></Label>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Button Text="確定"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Start"    
+                 FontSize="15"></Button>
+
+            <Label Text="解答:"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="15"></Label>
+
+
+            <Label x:Name="ans"
+                   HorizontalOptions="FillAndExpand"
+                   FontSize="15"></Label>
+
+
+
+
+
+        </StackLayout>
+        </StackLayout>
+</ContentPage>

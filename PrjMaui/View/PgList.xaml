@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.View.PgList"
+             Title="PgList">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="lblTitle"
+            Text="病人資料一覽表"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Start"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+        <ListView x:Name="lvPatient"
+                  ItemSelected="lvPatient_ItemSelected"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>
