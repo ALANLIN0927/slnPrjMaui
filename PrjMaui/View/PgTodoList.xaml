@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.View.PgTodoList"
+             Title="PgTodoList">
+    <VerticalStackLayout>
+        <Label 
+            Text="工作一覽表"
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand" />
+        <ListView x:Name="lvTodo"
+                  ItemSelected="lvTodo_ItemSelected"
+                  VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>

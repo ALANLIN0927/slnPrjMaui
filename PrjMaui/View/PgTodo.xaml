@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrjMaui.View.PgTodo"
+             Title="PgTodo">
+    <StackLayout>
+    <Label Text="代辦工作APP"
+               FontSize="35"
+               VerticalOptions="Start"
+               HorizontalOptions="CenterAndExpand"/>
+    <Label Text="代辦項目"
+               FontSize="25"
+               VerticalOptions="Start"
+            
+               HorizontalOptions="Start"/>
+        <Entry x:Name="txtTodo"
+               FontSize="25"
+               VerticalOptions="Start"
+               HorizontalOptions="FillAndExpand"/>
+        <Label Text="預計完成日期"
+               FontSize="25"
+               VerticalOptions="Start"
+            
+               HorizontalOptions="Start"/>
+        <Entry x:Name="txtDate"
+               FontSize="25"
+               VerticalOptions="Start"
+               HorizontalOptions="FillAndExpand"/>
+
+        <StackLayout Orientation="Horizontal">
+        <Button
+                FontSize="25"
+             Clicked="btnAdd_Clicked"   
+                Text="加入"
+                HorizontalOptions="FillAndExpand"/>
+        <Button
+                Clicked="btnBrowse_Clicked"
+                FontSize="25"
+                Text="瀏覽"
+                HorizontalOptions="FillAndExpand"
+                />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -8,30 +8,31 @@ namespace PrjMaui.View;
 
 public partial class PgEditor : ContentPage
 {
-	CPatientViewModel _model = new CPatientViewModel();
+	CPatientViewModel _model;
 
     //List<CPatient> list;
     //int _position = 0;
     public PgEditor()
 	{
 		InitializeComponent();
+		_model=this.BindingContext as CPatientViewModel;
 		
 	}
 
 	private void first_Clicked(object sender, EventArgs e)
 	{
 		_model.moveFirst();
-		selectMethod();
+	
 
 	}
 
 	private void selectMethod()
 	{
-		txtFidEntry.Text =_model.current.fId.ToString();
-		txtNameEntry.Text = _model.current.fName;
-		txtPhoneEntry.Text = _model.current.fPhone;
-		txtEmailEntry.Text = _model.current.fEmail;
-		txtAddressEntry.Text = _model.current.fAddress;
+		//txtFidEntry.Text =_model.current.fId.ToString();
+		//txtNameEntry.Text = _model.current.fName;
+		//txtPhoneEntry.Text = _model.current.fPhone;
+		//txtEmailEntry.Text = _model.current.fEmail;
+		//txtAddressEntry.Text = _model.current.fAddress;
 	}
 
 	private void loadData()
@@ -56,7 +57,7 @@ public partial class PgEditor : ContentPage
 		//          selectMethod();
 		//      }
 		_model.moveNext();
-		selectMethod();
+		//selectMethod();
 
 
 
@@ -70,7 +71,7 @@ public partial class PgEditor : ContentPage
 		//	_position=2;
 		//}
 		_model.movePrevious();
-        selectMethod();
+        //selectMethod();
 
 
     }
@@ -79,7 +80,7 @@ public partial class PgEditor : ContentPage
 	{  /* _position = list.Count-1;*/
 
 		_model.moveLast();
-        selectMethod();
+        //selectMethod();
 
 
 

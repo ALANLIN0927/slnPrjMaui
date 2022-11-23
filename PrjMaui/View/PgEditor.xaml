@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ISpanHis="clr-namespace:PrjMaui.ViewModels"
              x:Class="PrjMaui.View.PgEditor"
              Title="病歷號碼">
+    <ContentPage.BindingContext>
+        <ISpanHis:CPatientViewModel/>    
+    </ContentPage.BindingContext>
     <StackLayout VerticalOptions="FillAndExpand">
     <StackLayout VerticalOptions="FillAndExpand">
 
@@ -12,6 +16,7 @@
             VerticalOptions="FillAndExpand" 
             HorizontalOptions="Start" />
         <Entry x:Name="txtFidEntry"
+               Text="{Binding current.fId ,Mode=TwoWay}"
                HorizontalOptions="FillAndExpand"
                FontSize="30"></Entry>
 
@@ -24,6 +29,7 @@
             VerticalOptions="FillAndExpand" 
             HorizontalOptions="Start" />
         <Entry x:Name="txtNameEntry"
+               Text="{Binding current.fName,Mode=TwoWay}"
                HorizontalOptions="FillAndExpand"
                FontSize="30"></Entry>
         <Label 
@@ -33,6 +39,7 @@
             HorizontalOptions="Start" />
         <Entry x:Name="txtPhoneEntry"
                HorizontalOptions="FillAndExpand"
+                Text="{Binding current.fPhone,Mode=TwoWay}"
                FontSize="30"></Entry>
         <Label 
             Text="電子郵件"
@@ -40,14 +47,17 @@
             VerticalOptions="FillAndExpand" 
             HorizontalOptions="Start" />
         <Entry x:Name="txtEmailEntry"
+                Text="{Binding current.fEmail,Mode=TwoWay}"
                HorizontalOptions="FillAndExpand"
                FontSize="30"></Entry>
         <Label 
             Text="地址"
             FontSize="30"
+            
             VerticalOptions="FillAndExpand" 
             HorizontalOptions="Start" />
         <Entry x:Name="txtAddressEntry"
+                Text="{Binding current.fAddress,Mode=TwoWay}"
                HorizontalOptions="FillAndExpand"
                FontSize="30"></Entry>
         </StackLayout>
